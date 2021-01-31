@@ -1,0 +1,34 @@
+--- Documentation/ABI/stable/sysfs-driver-mlxreg-io
++++ Documentation/ABI/stable/sysfs-driver-mlxreg-io
+@@ -29,13 +29,13 @@ Description:	This file shows the system fans direction:
+ 
+ 		The files are read only.
+ 
+-What:		/sys/devices/platform/mlxplat/mlxreg-io/hwmon/hwmon*/jtag_enable
++What:		/sys/devices/platform/mlxplat/mlxreg-io/hwmon/hwmon*/cpld3_version
+ 
+ Date:		November 2018
+ KernelVersion:	5.0
+ Contact:	Vadim Pasternak <vadimpmellanox.com>
+ Description:	These files show with which CPLD versions have been burned
+-		on LED board.
++		on LED or Gearbox board.
+ 
+ 		The files are read only.
+ 
+@@ -121,6 +121,15 @@ Description:	These files show the system reset cause, as following: ComEx
+ 
+ 		The files are read only.
+ 
++What:		/sys/devices/platform/mlxplat/mlxreg-io/hwmon/hwmon*/cpld4_version
++Date:		November 2018
++KernelVersion:	5.0
++Contact:	Vadim Pasternak <vadimpmellanox.com>
++Description:	These files show with which CPLD versions have been burned
++		on LED board.
++
++		The files are read only.
++
+ Date:		June 2019
+ KernelVersion:	5.3
+ Contact:	Vadim Pasternak <vadimpmellanox.com>
